@@ -21,6 +21,10 @@ You also get this nice front page for free :)
 * [Slides](https://jonhue.github.io/pubtex/slides.pdf)
 * [Handout](https://jonhue.github.io/pubtex/slides_handout.pdf)
 
+* [Paper](https://alimousavimohammadi.github.io/alimousavimohammadi/paper.pdf)
+* [Slides](https://alimousavimohammadi.github.io/alimousavimohammadi/slides.pdf)
+* [Handout](https://alimousavimohammadi.github.io/alimousavimohammadi/slides_handout.pdf)
+
 ### Usage
 
 1. [Use this template](https://github.com/jonhue/pubtex/generate) (you only need to include the `main` branch)
