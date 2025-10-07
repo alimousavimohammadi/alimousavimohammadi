@@ -1,4 +1,4 @@
-Config files for my GitHub profile.
+I enjoy building useful and open-source robotics packages.
 
 * [Download my CV](https://alimousavimohammadi.github.io/alimousavimohammadi/paper.pdf)
 
