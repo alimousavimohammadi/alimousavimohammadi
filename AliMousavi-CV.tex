@@ -1,0 +1,329 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+%------------------------------------------------------------------ Ali
+\usepackage{enumitem} % برای leftmargin, itemsep, ...
+
+\usepackage{booktabs} % for fancy table
+\usepackage{multirow} % similar as multicolumn for rows
+\hypersetup{
+	hidelinks,
+	pdfborder={0 0 0}
+}
+\usepackage{tabularx} % add in your preamble
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+	
+	
+	\thispagestyle{empty}
+	%-------------------------------------------------------------
+	
+	\section*{Start}
+	
+	\simpleheader{headercolour}{Ali}{Mousavi}{\large Mechanical Engineer}{white}
+	
+	
+	
+	%------------------------------------------------
+	
+	% this has to be here so the paracols starts..
+	\subsection*{}
+	\vspace{3.4em}
+	
+	\setlength{\columnsep}{1.5cm}
+	\columnratio{0.23}[0.75]
+	\begin{paracol}{2}
+		\hbadness5000
+		%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+		
+		\paracolbackgroundoptions
+		
+		% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+		
+		
+		\footnotesize
+		{\setasidefontcolour
+			\flushleft
+			\begin{center}
+				\roundpic{files/ali.jpeg}
+			\end{center}
+			
+			\includegraphics[height = 0.3cm]{files/location.pdf} ~~~~~~~~ Belgium \\
+			\includegraphics[height = 0.3cm]{files/telephone.pdf} ~~~~~~ +32 499 45 54 52 \\
+			\includegraphics[height = 0.3cm]{files/email.pdf} ~~~~~~~ \href{mailto:ali.msv.mhd@gmail.com}{\textcolor{blue}{ali.msv.mhd@gmail.com}} \\
+			\includegraphics[height = 0.3cm]{files/linkedin_small.pdf} ~~~~~~~ \href{https://www.linkedin.com/in/seyyedalimousavimohammadi/}{\textcolor{blue}{LinkedIn}} \\
+			\includegraphics[height = 0.3cm]{files/kuleuven.png} \hspace{0.001em} \href{https://www.kuleuven.be/wieiswie/en/person/00130563}{\textcolor{blue}{KU Leuven}} \\
+			\includegraphics[height = 0.3cm]{files/google_scholar.pdf} ~~~~~~~ \href{https://scholar.google.com/citations?user=3fdeWbAAAAAJ&hl=en}{\textcolor{blue}{Google Scholar}} \\
+			\includegraphics[height = 0.3cm]{files/github.png} ~~~~~~~ \href{https://github.com/alimousavimohammadi}{\textcolor{blue}{GitHub}}
+%			\infobubble{\faAt}{cvgreen}{white}{ali.msv.mhd@gmail.com}
+%			\infobubble{\faTwitter}{cvgreen}{white}{@sparrow}
+%			\infobubble{\faFacebook}{cvgreen}{white}{Jack Sparrow}
+%			\infobubble{\faGithub}{cvgreen}{white}{sparrow}
+			
+			\bigskip
+			\bigskip
+			
+%			\bg{cvgreen}{white}{ABOUT ME}\\[0.5em]
+%			Robotics engineer with expertise in kinematics, dynamics, and robot–environment interaction. Skilled in control, learning from demonstration, and mechanical design. Looking to apply research and engineering expertise to advanced robotic systems in industry.
+					
+			\bigskip
+			\bigskip
+			
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			\bg{cvgreen}{white}{PERSONAL SKILLS} \\[0.5em]
+			\begin{itemize}[leftmargin=1em, itemsep=0pt, topsep=0pt]
+				\item Team player
+				\item Planning
+				\item Organization
+				\item Result oriented
+				\item Problem solving
+				\item Analytical skills
+				\item Fast learner
+			\end{itemize}
+			
+			\bigskip	
+			\bigskip
+			\bigskip
+			\bigskip
+			
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			\bg{cvgreen}{white}{TECHNICAL SKILLS} \\[0.5em]
+			
+			\begin{itemize}[leftmargin=1em, itemsep=0pt, topsep=0pt]
+				\item MATLAB \& Simulink (real-time robot control, data analysis)
+				\item Python (off-line and on-line data analysis)
+				\item ROS (robot programming and visualization in RVIZ)
+				\item PyBullet (robot programming of contact tasks)
+				\item SOLIDWORKS (CAD, FEA, Motion Analysis)
+				\item ABAQUS (FEA)
+			\end{itemize}
+				
+			\bigskip		
+			\bigskip
+			\bigskip
+			\bigskip
+
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			\bg{cvgreen}{white}{LANGUAGES}\\[0.5em]
+			\begin{itemize}[leftmargin=1em, itemsep=0pt, topsep=0pt]
+				\item English: Fluent
+				\item Dutch: Beginner
+				\item Persian: Native proficiency
+			\end{itemize}
+			
+			\bigskip
+			\bigskip
+			\bigskip
+			\bigskip
+			
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			\bg{cvgreen}{white}{REFERENCES}\\[0.5em]
+			\begin{itemize}[leftmargin=1em, itemsep=0pt, topsep=0pt]
+				\item Joris De Schutter (\href{mailto:joris.deschutter@kuleuven.be}{\textcolor{blue}{joris.deschutter@kuleuven.be}})
+				\item Erwin Aertbeli\"en (\href{mailto:erwin.aertbelien@kuleuven.be}{\textcolor{blue}{erwin.aertbelien@kuleuven.be}})
+				\item Maxim Vochten (\href{mailto:maxim.vochten@mil.be}{\textcolor{blue}{maxim.vochten@mil.be}})
+			\end{itemize}
+			\vspace{0em} % you must edit this number for proper length of the left column
+			
+%			\phantom{turn the page}
+			
+%			\phantom{turn the page}
+		}
+		%-----------------------------------------------------------
+		\switchcolumn
+		
+		\small
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		\section*{Profile}
+%		\vspace{1cm}
+		
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\section*{About Me}
+		\large I am a mechanical engineer with knowledge in kinematics, dynamics, robotics, and control. I have hands-on experience in designing machines and robots, as well as in robot programming, such as learning from demonstration for tasks with robot–environment interaction. With a practical mindset, I aim to use my skills and research to solve real industrial problems. \vspace{-0.3cm}
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\section*{Education}
+		\vspace{-0.4cm}
+		\begin{table}[h]
+		 	\centering
+		 	\begin{tabularx}{\linewidth}{X}
+		 		\textbf{PhD in Mechanical Engineering} (2019 -- 2025) \\
+		 		\textit{KU Leuven, Belgium} \includegraphics[height=0.35cm]{files/location.pdf} \\[0.4cm]
+		 		
+		 		\textbf{Master in Mechanical Engineering} (2013 -- 2016) \\
+		 		\textit{University of Mashhad, Iran} \includegraphics[height=0.35cm]{files/location.pdf} \\[0.4cm]
+		 		
+		 		\textbf{Bachelor in Mechanical Engineering} (2009 -- 2013) \\
+		 		\textit{University of Mashhad, Iran} \includegraphics[height=0.35cm]{files/location.pdf} \\
+		 	\end{tabularx}
+		\end{table}
+		\vspace{-0.6cm}
+		 
+		 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\section*{Experience}
+		\vspace{-0.4cm}
+		
+		\begin{table}[h]
+			\centering
+			\begin{tabularx}{\linewidth}{X} % single flexible column
+				\textbf{Research Engineer} (2019 -- present) \\
+				\textit{KU Leuven, Belgium} \includegraphics[height=0.35cm]{files/location.pdf} \\
+				\vspace{-0.3cm}
+				\begin{itemize}[leftmargin=1em, itemsep=0pt, topsep=0pt]
+					\item Controlling robots in physical contact with the environment using a constraint-based controller (ROS, OROCOS, eTaSL in Lua and Python)
+					\item User-friendly trajectory generation for contact-rich tasks with a novel learning-from-demonstration technique
+					\item Working with 6-axis force/torque sensors and motion capture systems
+					\item Developing toolboxes in MATLAB and Python for easier robot programming
+					\item Attending international industrial conferences and workshops
+				\end{itemize} \\
+				
+				\vspace{0.01cm}
+				\textbf{Mechanical Engineer:} (2018 -- 2019) \\
+				\textit{TGT Company, Iran} \includegraphics[height=0.35cm]{files/location.pdf} \\
+				\vspace{-0.3cm}
+				\begin{itemize}[leftmargin=1em, itemsep=0pt, topsep=0pt]
+					\item Die design for heat exchanger gaskets and plates in SOLIDWORKS using CMM point clouds
+					\item Structural design of heat exchangers in SOLIDWORKS
+					\item Preparing technical drawings and BOMs
+					\item Making as-built drawings
+				\end{itemize} \\
+			
+				\vspace{0.01cm}
+				\textbf{Research Engineer:} (2013 -- 2018) \\ \textit{University of Mashhad, Iran} \includegraphics[height=0.35cm]{files/location.pdf} \\
+				\vspace{-0.3cm}
+				\begin{itemize}[leftmargin=1em, itemsep=0pt, topsep=0pt]
+					\item Shared-control trajectory generation with admittance control for welding in MATLAB/Simulink
+					\item Mechanical design of robots in SOLIDWORKS
+					\item Kinematic and dynamic analysis in SOLIDWORKS Motion Analysis
+					\item Kinematic/dynamic robot design and analysis in MATLAB
+					\item Attending industrial conferences
+				\end{itemize} \\
+			\end{tabularx}
+		\end{table}
+		
+		
+		
+	
+	
+		\vspace{10em}
+		
+		\bigskip
+			
+		\vfill{} % Whitespace before final footer
+		
+		%----------------------------------------------------------------------------------------
+		%	FINAL FOOTER
+		%----------------------------------------------------------------------------------------
+		\setlength{\parindent}{0pt}
+%		\begin{minipage}[t]{\rightcolwidth}
+%			\begin{center}
+%				\fontfamily{\sfdefault}\selectfont \color{black!70}
+%				{\small Ali Mousavi
+%					~~~~ \includegraphics[height = 0.3cm]{location.pdf} ~ Belgium
+%					~~~~ \includegraphics[height = 0.3cm]{telephone.pdf} ~ +32 499 45 54 52
+%					~~~~ \includegraphics[height = 0.3cm]{email.pdf} ~ \href{mailto:ali.msv.mhd@gmail.com}{ali.msv.mhd@gmail.com}
+%				}
+%			\end{center}
+%		\end{minipage}
+		
+	\end{paracol}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section*{Other projects}
+	\vspace{-0.4cm}
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabularx}{\linewidth}{X} % single flexible column
+			\textbf{Research Engineer} (2019 -- present) \\
+			\vspace{-0.3cm}
+			\begin{itemize}[leftmargin=1em, itemsep=0pt, topsep=0pt]
+				\item Applying Iterative Learning Control (ILC) to robotic tasks that involve physical contact with environment to expedite tasks (ROS, OROCOS, eTaSL)
+				\item Estimating mass, center of mass, and 6-axis force/torque sensor offsets from force and moment measurements in simulation and real world (MATLAB and Python)
+				\item Shared control for an assembly task in a human-robot collaboration scenario
+				\item Spline-based optimal trajectory generation for a linear motor
+				\item Simulating a 2-D Contour Following task in PyBullet using a constraint-based controller
+			\end{itemize} \\
+			
+			\vspace{0.01cm}
+			\textbf{Mechanical Engineer:} (2018 -- 2019) \\
+			\vspace{-0.3cm}
+			\begin{itemize}[leftmargin=1em, itemsep=0pt, topsep=0pt]
+				\item Mechanical design of an electric well inspection winch system for water wells using SOLIDWORKS
+			\end{itemize} \\
+			
+			\vspace{0.01cm}
+			\textbf{Research Engineer:} (2013 -- 2018) \\
+			\vspace{-0.3cm}
+			\begin{itemize}[leftmargin=1em, itemsep=0pt, topsep=0pt]
+				\item Designed a linear electric actuator for integration into a car simulator based on a Stewart platform using SOLIDWORKS
+				\item Performed kinematic and dynamic optimization of a Stewart platform for improved motion performance USING MATLAB and Genetic Algorithm (GA)
+				\item Developed the mechanical design of an active physiotherapy robot for knee rehabilitation using SOLIDWORKS
+				\item Conducted finite element analysis (FEA) of mechanical components using ABAQUS
+				\item Designed and simulated fuzzy and sliding mode controllers for a 6-DOF robotic arm using MATLAB
+			\end{itemize} \\
+		\end{tabularx}
+	\end{table}
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section*{Conference \& Journal Papers}
+	\begin{minipage}{\textwidth}
+		\begin{list}{$\bullet$}{%
+				\setlength{\leftmargin}{10pt}    % no left indent for whole list
+				\setlength{\labelwidth}{1em}    % width reserved for bullet
+				\setlength{\labelsep}{0.5em}    % space between bullet and text
+				\setlength{\itemsep}{0pt}       % no space between items
+				\setlength{\parsep}{0pt}
+				\setlength{\topsep}{0pt}
+				\setlength{\partopsep}{0pt}
+			}
+			\item Estimating the Sensor Offsets and Gravity Parameters Using only Wrench Measurements
+			
+			\item Automatic Derivation of an Optimal Task Frame for Learning and Controlling Contact Tasks
+			
+			\item Invariant Descriptors of Motion and Force Trajectories for Interpreting Object Manipulation Tasks in Contact
+			
+			\item Real-time velocity scaling and obstacle avoidance for industrial robots using fuzzy dynamic movement primitives and virtual impedances
+			
+			\item A real-time impedance-based singularity and joint-limits avoidance approach for manual guidance of industrial robots
+			
+			\item Fuzzy impedance control strategy for jaw rehabilitation using 6-UPS Stewart robot
+			
+			\item Design and construction of a linear-rotary joint for robotics applications
+			
+			\item Repeatability analysis of a SCARA robot with planetary gearbox
+			
+			\item Design of an economical SCARA robot for industrial applications
+		\end{list}
+	\end{minipage}
+
+\end{document}
